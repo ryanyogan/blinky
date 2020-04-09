@@ -1,0 +1,19 @@
+name: blinky-ryanyogan
+version: master
+summary: Blink away
+description: |
+  This is a simple example to see random lights blink,
+  someone just wants to see if Gobot is more fun than
+  Erlang :)
+
+confinement: devmode
+
+apps:
+  blinky-ryanyogan:
+    command: gobot-blink
+
+parts:
+  gobot-blink:
+    source: .
+    plugin: go
+    go-importpath: github.com/ryanyogan/blinky
