@@ -10,10 +10,10 @@ confinement: devmode
 
 apps:
   blinky-ryanyogan:
-    command: gobot-blink
+    command: blinky
 
 parts:
-  gobot-blink:
+  blinky:
     source: .
     plugin: go
     go-importpath: github.com/ryanyogan/blinky
